@@ -76,11 +76,11 @@ function mostrarUsers(e) {
         }
         puntero.continue();  //Sale todo por pantella gracias a el.
         
-        if(contador == 0){
-            divUser.style.display = "none";
-        }
+        
     }
-
+    if(contador == 0){
+                divUser.style.display = "none";
+            }
    
 }
 
