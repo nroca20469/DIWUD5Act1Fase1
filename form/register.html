@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/registerstyle.css">
+    <title>Tell me</title>
+</head>
+
+<body>
+    <header class="container-fluid text-light">
+        <nav class="navbar navbar-expand-md navbar-light p-3">
+            <div class="container-xxl">
+                <!-- Logo i texto del logo -->
+                <p>
+                    <a class="navbar-brand" href="../index.html">
+                         <img src="../img/WhiteLogo.png" alt="Logo" width="60" height="60" class="logo">
+                        </a>
+                    <a href="../index.html" class="logo">Tell me</a>  
+                </p>
+                       
+                <!-- Offcanvas button -->
+                <button class="btn d-lg-" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
+                    <span class="icon-bar" style="width: 60; height: 60;"> 
+                        <i class="bi bi-list"> </i>
+                    </span>
+                </button>
+
+
+                <!-- Offcanvas part -->                
+                <div class="offcanvas-lg offcanvas-end d-lg-none" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+                    <div class="offcanvas-header">
+                        <div class="btn-group m-3">
+                            <button type="button" class="btn">
+                                <a class="nav-link" href="#instagram">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </button>
+                            <button type="button" class="btn">
+                                <a class="nav-link" href="#facebook">
+                                    <i class="bi bi-facebook"></i>
+                                </a></button>
+                            <button type="button" class="btn">
+                                <a class="nav-link" href="#twitch">
+                                    <i class="bi bi-twitch"></i>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="offcanvas-body">
+                        <!-- Finder --> 
+                        <div class="input-group m-3">
+                            <div class="form-outline">
+                              <input type="search"  class="form-control" placeholder="Search"/>
+                            </div>
+                            <button type="button" class="btn">
+                              <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    
+                        <!-- Topic finder -->
+                        <div class="m-3">
+                            <div class="text-center pt-3">
+                                <p>TOPICS</p>
+                            </div>
+                            
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center cuerpo">
+                                    <input class="bg-dark-subtleform-check-input mx-3" type="checkbox" value="deporte" id="deporte">
+                                    <label for="deporte" class="mx-3">Deporte</label>
+                                    <span class="badge rounded-pill mx-2 d-none d-sm-block d-md-block">4</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center cuerpo">
+                                    <input class="bg-dark-subtleform-check-input mx-3" type="checkbox" value="amor" id="amor">
+                                    <label for="amor" class="mx-3">Amor</label>
+                                    <span class="badge bg-primary rounded-pill mx-2 d-none d-sm-block d-md-block">10</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center cuerpo">
+                                    <input class="bg-dark-subtleform-check-input mx-3" type="checkbox" value="familia" id="familia">
+                                    <label for="familia" class="mx-3">Familia</label>
+                                    <span class="badge bg-primary rounded-pill mx-2 d-none d-sm-block d-md-block">15</span>
+                                </li>
+                            </ul>
+                            <div class="d-grid justify-content-md-end mt-1"> 
+                                <button class="btn">Search</button>   
+                            </div>
+                        </div> 
+                
+                        <!-- Close button -->
+                        <button class="close-btn" type="button" aria-label="close">
+                            <a class="nav-link" href="register.html">
+                                <i class="bi bi-arrow-bar-right"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- navbar links -->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-md-none d-lg-block">
+                    <button class="btn me-2 md-2" type="button">
+                        <a class="nav-link" href="#instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </button>
+                    <button class="btn me-2 md-2" type="button">
+                        <a class="nav-link" href="#facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </button>
+                    <button class="btn me-2" type="button">
+                        <a class="nav-link" href="#twitch">
+                            <i class="bi bi-twitch"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+    
+        </nav>
+    
+    </header>
+
+    <main class="pb-2 pt-2">
+        <div class="container pt-3">
+            <div class="py-4 justify-content-center ">
+                <h3 class="animate__heartBeat">REGISTER</h3>
+            </div>
+            <div class="row justify-content-center pb-5 text-center">
+                <form class="col-lg-5 pb-3" id="form">
+                    <div class="pb-3 pt-4">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" name="username" id="username">
+                        <small>Missatge error</small>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" class="form-control" name="email" id="email" placeholder="example@gmail.com">
+                        <small>Missatge error</small>
+                    </div> 
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="text" class="form-control" name="password" id="password" placeholder="********">
+                        <small>Missatge error</small>
+                    </div> 
+                    <div class="mb-3">
+                        <label for="password2" class="form-label">Repeat Password</label>
+                        <input type="text" class="form-control" name="password2" id="password2" placeholder="********">
+                        <small>Missatge error</small>
+                    </div>
+                    <div class="mb-3 text-center" id="userPhoto">
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label" name="userProfilePhoto" id ="userProfilePhoto" value="Cutie1" >
+                                <input class="form-check-input" type="radio" name="userProfilePhoto" id="userProfilePhoto1" value="userProfielPhoto1" hidden>
+                                    <img src="../img/perfil/perfil4.png" alt="Cutie1" width="80px" id="profilePhoto1">
+                                </input>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label" name="userProfilePhoto" id ="userProfilePhoto" value="Cutie2" >
+                                <input class="form-check-input" type="radio" name="userProfilePhoto" id="userProfilePhoto2" value="userProfielPhoto2" hidden>
+                                    <img src="../img/perfil/perfil5.png" alt="Cutie2" width="80px" id="profilePhoto2">
+                                </input>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label" name="userProfilePhoto" id ="userProfilePhoto" value="Cutie3" >
+                                <input class="form-check-input" type="radio" name="userProfilePhoto" id="userProfilePhoto3" value="userProfielPhoto3" hidden>
+                                    <img src="../img/perfil/perfil6.png" alt="Cutie3" width="80px" id="profilePhoto3">
+                                </input>
+                            </label>
+                        </div>
+                        
+                    </div><small id="missatgeImg">Missatge error</small>
+
+                    <div class="mb-3 userTYpe" id="userTy">
+                        <label for="userType" class="form-label p-2">User Type: </label>                    
+                        <div class="form-check form-check-inline userType" id="userType">
+                            <input class="form-check-input" type="radio" name="userType" id="admin" value="Admin">
+                            <label class="form-check-label" for="admin">Admin</label>
+                          </div>
+                          <div class="form-check form-check-inline userType" id="userType">
+                            <input class="form-check-input" type="radio" name="userType" id="usera" value="User">
+                            <label class="form-check-label" for="user">User</label>
+                          </div>
+
+                    </div><small id="missatgeType">Missatge error</small>
+                    <div class="d-grid gap-2 col-4 mx-auto m-2">
+                        <div class="btn btn-secondary" name="submit" id="save"> Registro </div>
+                    </div>
+                    <div class="d-grid gap-2 col-2 mx-auto m-2">
+                        <div class="btn btn-secondary" id="sub"> Register </div>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <nav class="navbar navbar-expand-md navbar-light" >
+            <div class="container-fluid">
+                <button class="btn" style="color: #DEF2C8 !important;">Contact</button>
+                <div class="justify-content-end align-center">
+                    <a href="form/register.html"><button class="btn" style="color: #DEF2C8 !important;">Register</button></a>
+                    <a href="form/login.html"><button class="btn" style="color: #DEF2C8 !important;">Log in</button></a>
+                </div>
+            </div>
+        </nav>
+    </footer>
+
+    <script src="../js/checkFrom.js" defer></script>
+    <script src="../js/register.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+.img {
+    max-width: 200px;
+}
+
+/* main {
+    /* width: 100%; */
+    /* height: 100%; */
+    /* background-color: red; */
+    
+/* }
+
+body {
+    background-color: red !important; 
+} */
+
+#showData {
+    text-align: center;
+    padding-block: 10px;
+    padding-bottom: 30px;
+}
+
+/* img{
+    background-color: red !important; 
+} */
+
+.btn {
+    background-color:#4C2E10;
+    color: #E7B888;
+    padding: 10px;
+}

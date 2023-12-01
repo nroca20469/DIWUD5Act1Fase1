@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/styleCustom.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Tell me</title>
+</head>
+
+<body>
+    <header class="container-fluid text-light">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-xxl">
+                <!-- Logo i texto del logo -->
+                <p>
+                    <a class="navbar-brand" href="#">
+                         <img src="img/WhiteLogo.png" alt="Bootstrap" width="60" height="60">
+                        </a>
+                    <a name="Tell" href="index.html" class="logo">Tell me</a>  
+                </p>
+                                 
+                 <!-- Offcanvas button -->
+                <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
+                    <span class="icon-bar" style="width: 60; height: 60;"> 
+                        <i class="bi bi-list"> </i>
+                    </span>
+                </button>
+
+
+                <!-- Offcanvas part -->                
+                <div class="offcanvas-lg offcanvas-end d-lg-none" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+                    <div class="offcanvas-header">
+                        <div class="btn-group m-3">
+                            <button type="button" class="btn">
+                                <a class="nav-link" href="#instagram">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </button>
+                            <button type="button" class="btn">
+                                <a class="nav-link" href="#facebook">
+                                    <i class="bi bi-facebook"></i>
+                                </a></button>
+                            <button type="button" class="btn">
+                                <a class="nav-link" href="#twitch">
+                                    <i class="bi bi-twitch"></i>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="offcanvas-body">
+                        <!-- Finder --> 
+                        <div class="input-group m-3">
+                            <div class="form-outline">
+                              <input type="search"  class="form-control" placeholder="Search"/>
+                            </div>
+                            <button type="button" class="btn">
+                              <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    
+                        <!-- Topic finder -->
+                        <div class="m-3">
+                            <div class="text-center pt-3">
+                                <p>TOPICS</p>
+                            </div>
+                            
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center cuerpo">
+                                    <input class="bg-dark-subtleform-check-input mx-3" type="checkbox" value="deporte" id="deporte">
+                                    <label for="deporte" class="mx-3">Deporte</label>
+                                    <span class="badge rounded-pill mx-2 d-none d-sm-block d-md-block">4</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center cuerpo">
+                                    <input class="bg-dark-subtleform-check-input mx-3" type="checkbox" value="amor" id="amor">
+                                    <label for="amor" class="mx-3">Amor</label>
+                                    <span class="badge bg-primary rounded-pill mx-2 d-none d-sm-block d-md-block">10</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center cuerpo">
+                                    <input class="bg-dark-subtleform-check-input mx-3" type="checkbox" value="familia" id="familia">
+                                    <label for="familia" class="mx-3">Familia</label>
+                                    <span class="badge bg-primary rounded-pill mx-2 d-none d-sm-block d-md-block">15</span>
+                                </li>
+                            </ul>
+                            <div class="d-grid justify-content-md-end mt-1"> 
+                                <button class="btn">Search</button>   
+                            </div>
+                        </div> 
+                
+                        <!-- Close button -->
+                        <button class="close-btn" type="button" aria-label="close">
+                            <a class="nav-link" href="register.html">
+                                <i class="bi bi-arrow-bar-right"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- navbar links -->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-md-none d-lg-block">
+                    <button class="btn me-2 md-2" type="button">
+                        <a class="nav-link" href="#instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </button>
+                    <button class="btn me-2 md-2" type="button">
+                        <a class="nav-link" href="#facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </button>
+                    <button class="btn me-2" type="button">
+                        <a class="nav-link" href="#twitch">
+                            <i class="bi bi-twitch"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+    
+        </nav>
+    
+    </header>
+
+    <main style="background-color: #DEF2C8 !important;">
+        <div class="container-fluid ps-4 pb-4">
+            <div class="row">
+                <!-- Articles -->
+                <div class="col">
+                    <div class="row mt-4">
+                        <div class="col text-center">
+                            <a href="form/article.html"><img src="img/candy.jpg" alt="imagen" width="133" height="133"></a>
+                        </div>
+                        <div class="col ms-2 me-1">
+                            <h5>A veces me pregunto pq...</h5>
+                            <p>Lorem ipsum dolor sit amet... <a href="form/article.html" class="btn btn-link">Leer mas...</a></p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col text-center">
+                            <a href="form/article.html"><img src="img/a.jpg" alt="imagen" width="133" height="133"></a>
+                        </div>
+                        <div class="col ms-2 me-1">
+                            <h5>Ns si es en serio</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur ... <a href="form/article.html" class="btn btn-link">Leer mas...</a></p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col text-center">
+                            <a href="form/article.html"><img src="img/e.jpg" alt="imagen" width="133" height="133"></a>
+                        </div>
+                        <div class="col ps-2 me-1">
+                            <h5>Me gusta cocinar pero...</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur ... <a href="form/article.html" class="btn btn-link">Leer mas...</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More articles-->
+                <div class="col">
+                    <div class="row mt-4">
+                        <div class="col text-center">
+                            <a href="form/article.html"><img src="img/gore.jpg" alt="imagen" width="133" height="133"></a>
+                        </div>
+                        <div class="col ps-2 me-1">
+                            <h5>Le hice daño a alguien</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur ... <a href="form/article.html" class="btn btn-link">Leer mas...</a></p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col text-center">
+                            <a href="form/article.html"><img src="img/haikyuu.jpg" alt="imagen" width="133" height="133"></a>
+                        </div>
+                        <div class="col ps-2 me-1">
+                            <h5>Me gusta pero me hace daño</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur ... <a href="form/article.html" class="btn btn-link">Leer mas...</a></p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col text-center">
+                            <a href="form/article.html"><img src="img/i.jpg" alt="imagen" width="133" height="133"></a>
+                        </div>
+                        <div class="col ps-2 me-1">
+                            <h5>Me gustaria ser...</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur ... <a href="form/article.html" class="btn btn-link">Leer mas...</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Search bar & topic checker -->
+                <div class="col-lg-3 d-none d-lg-block d-xl-block d-xxl-block p-4">
+                    <form class="mt-3 mb-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control text-center" id="search" placeholder="Search">
+                            <span class="input-group-text"  style="background-color: #4C2E10 !important; border-style: solid !important; border-color: #4C2E10;">
+                                <i class="bi bi-search"></i>
+                            </span>
+                        </div>
+                    </form>
+                    <div class=" bg-dark-subtle d-md-block pt-2" style="border-style: solid; border-color: #4C2E10; border-width: 2px; border-radius: 7px; background-color: #E7B888 !important;">
+                        <div class="text-center" >
+                            <h6 style="color: #4C2E10;">TOPICS</h6>
+                        </div>
+                        
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: #E7B888 !important; border: 1px solid #4C2E10;">
+                                <input class="me-1 checkbox" type="checkbox" value="deporte" class="deporte">
+                                    <label for="deporte" style="color:#4C2E10;">Deporte</label>
+                                <span class="badge rounded-pill" style="color: #DEF2C8 !important; background-color: #4C2E10;">4</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: #E7B888 !important;  border-style: none solid; border-color: #4C2E10 !important; border-width: 1px;">
+                                <input class="me-1" type="checkbox" value="amor" id="amor">
+                                    <label for="amor" style="color:#4C2E10;">Amor</label>
+                                <span class="badge rounded-pill" style="color: #DEF2C8 !important; background-color: #4C2E10;">10</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: #E7B888 !important; border: 1px solid #4C2E10;">
+                                <input class="bg-dark-subtleform-check-input me-1" type="checkbox" value="familia" id="familia">
+                                    <label for="familia" style="color:#4C2E10;">Familia</label>
+                                <span class="badge rounded-pill" style="color: #DEF2C8 !important; background-color: #4C2E10;">15</span>
+                            </li>
+                        </ul>
+                        <div class="d-grid justify-content-md-end ">
+                            <button class="btn" style="color: #4C2E10;">Search</button>
+                        </div>
+                    </div>
+                    <div id="user" class="text-center">
+                        <img src="" alt="" id="img" width="100px">
+                        <h4 id="username"></h4>
+                        <h6 id="email"></h6>
+                        <a href="form/profilePage.html"><button id="view-profile"> View Profile </button></a>
+                        <button id="cerrar-session"> Log Out </button>                    
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer with contact, sign in & login -->
+    <footer>
+        <nav class="navbar navbar-expand-md navbar-light" >
+            <div class="container-fluid">
+                <button class="btn" style="color: #DEF2C8 !important;">Contact</button>
+                <div class="justify-content-end align-center">
+                    <a href="form/register.html"><button class="btn" style="color: #DEF2C8 !important;">Register</button></a>
+                    <a href="form/login.html"><button class="btn" style="color: #DEF2C8 !important;">Log in</button></a>
+                </div>
+            </div>
+        </nav>
+    </footer>
+    <script src="js/showAvatar.js"></script>
+    <script src="js/logout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

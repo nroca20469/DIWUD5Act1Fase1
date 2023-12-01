@@ -1,0 +1,24 @@
+
+
+$custom-spacer: 10px;
+
+$spacers: (
+  0: 0,
+  1: $custom-spacer * 0.25,
+  2: $custom-spacer * 0.5,
+  3: $custom-spacer,
+  4: $custom-spacer * 1.5,
+  5: $custom-spacer * 3,
+);
+
+$primary: #4C2E10;
+$secondary: #E7B888;
+
+$colorText: #0B0A07;
+$colorBackAMenu: #DEF2C8;
+$colorTextBtn: #087E8B;
+
+
+$offcanvas-bg-color: $secondary !default;
+
+@import "../node_modules/bootstrap/scss/bootstrap";

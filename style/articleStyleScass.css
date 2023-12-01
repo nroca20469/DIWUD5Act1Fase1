@@ -1,0 +1,18 @@
+/* Error: The target selector was not found.
+ * Use "@extend %padding-comentarios !optional" to avoid this error.
+ *     ,
+ * 201 |     @extend %padding-comentarios;
+ *     |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *     '
+ *   style\articleStyleScss.scss 201:5  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: The target selector was not found.\aUse "@extend %padding-comentarios !optional" to avoid this error.\a     \2577 \a 201 \2502      @extend %padding-comentarios;\d\a     \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a     \2575 \a   style\\articleStyleScss.scss 201:5  root stylesheet';
+}

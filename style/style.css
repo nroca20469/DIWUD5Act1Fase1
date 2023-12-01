@@ -1,0 +1,212 @@
+/*Import fonts*/
+@font-face {
+    font-family: 'fontTitle';
+    src: url('fonts/Josefin_Slab/JosefinSlab-VariableFont_wght.ttf');
+} 
+
+@font-face {
+    font-family: 'fontSubtitles';
+    src: url('fonts/Victor_Mono/VictorMono-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'fontParragraphIButtons';
+    src: url('fonts/Lemonada/Lemonada-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'fontCatchAttention';
+    src: url('fonts/Roboto_Mono//RobotoMono-VariableFont_wght.ttf');
+}
+
+/*Use the fonts already imported */
+h3{
+    font-family: fontParragraphIButtons !important;
+    font-size: 25px !important;
+    color: #4C2E10 !important;
+}
+
+h5{
+    font-family: fontTitle !important;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+h6{
+    font-family: fontSubtitles;
+}
+
+label{
+    font-family: fontParragraphIButtons;
+    font-size: 12px;
+}
+
+button{
+    font-family: fontParragraphIButtons !important;
+    font-size: 12px !important;  
+}
+
+p{
+    font-family: fontParragraphIButtons, 'Arial', 'Slab Serif' !important;
+    font-size: 12px;
+}
+
+a{
+    font-family: fontCatchAttention !important;
+    font-size: 13px !important;
+}
+
+/* Style of the components */
+
+main {
+    background-color: #DEF2C8 !important;
+}
+
+header {
+    background-color: #4C2E10 !important;
+}
+
+footer {
+    background-color: #4C2E10 !important;
+}
+
+a{
+    text-decoration: none !important; 
+    font-family: Lemonada !important;
+    color: #DEF2C8; 
+    font-size: 18px !important;
+}
+
+/* Offcanvas style */
+div span i{
+    color: #DEF2C8;
+}
+
+/*#offcanvasResponsive {
+    background-color: #4C2E10;
+}*/
+.offcanvas-header .btn-group{
+    width: 100%;
+    background-color: #E7B888 !important;
+}
+
+.offcanvas-header .btn-group .btn{
+    color: #4C2E10;
+}
+    /*Finder */
+.input-group {
+    width: 90%;
+}
+
+.form-outline{
+    width: 80% !important;
+    border: 2px solid #E7B888;
+    border-radius: 7px;
+    background-color: #E7B888;
+}
+.input-group .form-outline .form-control{
+    background-color: #E7B888 !important; 
+    width: 100% !important;
+    border: 3px solid #E7B888;
+}
+
+.input-group .btn {
+    background-color: #4C2E10 !important; 
+    border-style: solid !important; 
+    border-color: #4C2E10; 
+    border:1px solid #E7B888;
+    width: 20%;
+    color: #E7B888
+}
+
+/* Topic searcher */
+div div p{
+    color: #4C2E10;
+    font-size: medium;
+}
+
+div .m-3{
+    background-color: #E7B888; 
+    border: 4px solid #4C2E10; 
+    border-radius: 10px;
+}
+
+.m-3 ul li {
+    background-color: #E7B888; 
+    border: #E7B888;
+}
+
+.m-3 ul .cuerpo {
+    border-top: 2px solid #0B0A07;
+    border-radius: 7px;
+}
+
+.list-group li label {
+    color: #4C2E10 !important;
+}
+
+.m-3 ul li span {
+    background-color: #4C2E10 !important; 
+    color: #E7B888 !important;
+}
+
+.m-3 div .btn {
+    border: 2px solid #4C2E10; 
+    color: #4C2E10;
+}
+
+
+.offcanvas-body .close-btn {
+    color: #4C2E10;
+    background-color: #E7B888;
+    border: #4C2E10;
+    border-radius: 7px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+
+/* Nav bar style */
+div .me-2 {
+    background-color: #4C2E10; 
+    color: #DEF2C8;
+}
+
+
+
+div form div .input-group input{
+    background-color: #E7B888 !important; 
+    border-style: solid !important; 
+    border-color: #4C2E10;
+}
+/* input[type="checkbox"] + label:hover {    background-color: #00FF00;   }
+
+input[type="checkbox"]:checked + label {   background-color: #00FF00;    }*/
+
+
+::placeholder{  /* Changes the color of the placeholder text */
+    color: #4C2E10 !important;
+    font-family: fontParragraphIButtons;
+    font-size: 12px;;
+} 
+
+input[type="checkbox"] {  /*Changes the color, with the background color & changes it's color with the one when checked that yu put(in that case brown)*/
+    accent-color: #4C2E10 !important;
+    mix-blend-mode: multiply;
+}
+
+#user {
+    margin: 20px;
+    padding: 10px;
+    background: #E7B888;
+    border-radius: 7px;
+}   
+
+#view-profile, #cerrar-session {
+    border-radius: 7px;
+    background-color:  #4C2E10;
+    color: #E7B888;
+    border: 1px solid #4C2E10;
+    padding: 8px;
+    margin-bottom: 8px;
+}

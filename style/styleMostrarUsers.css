@@ -1,0 +1,19 @@
+main {
+    padding: 20px;
+}
+
+.p-2 {
+    background-color: #4C2E10;
+    color: #E7B888 ;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.btn-editar {
+    background-color:#E7B888  ;
+    color: #4C2E10;
+    border: 1px solid #E7B888;
+    border-radius: 7px;
+    margin: 5px;
+    padding: 5px;
+}

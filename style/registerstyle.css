@@ -1,0 +1,163 @@
+main {
+    background-color: #DEF2C8;
+}
+
+/* Para todo el formulario */
+form {
+    background-image: url('../img/back/totoro.png');
+    background-size: 150% 100%;
+    background-position-x: center;
+    background-blend-mode:hue;
+    border-radius: 7%;
+    opacity: 0.8;
+}
+
+/* Para todos los label */
+label{
+    color: #ffff;
+    opacity: 1;
+}
+
+/* Para todas las imagenes */
+img{
+    opacity: 0.8;
+}   
+
+h3{
+  opacity: 1;
+}
+
+/* Solo para los form-check */
+.mb-3 .form-check{ 
+    height: 110px;
+}
+
+
+/* Para todos los inout del formulario */
+form input{
+    opacity: 1.5;
+    width: 80% !important;
+    align-self: center !important;
+    margin-left: 10%;
+    box-shadow: 5px 5px;
+    background-image: linear-gradient(#ffff, #DEF2C8);
+}
+
+/* Para cuando pasamos el raton por encima de la img */
+img{
+    transition: width 1s, height 1s;
+}
+
+.form-check label img:hover{
+	opacity: 1;
+    width: 100px;
+    height: 100px;
+}
+
+/* Para cuando los inputs esten checkeados que las imagees: */
+label > input:checked + img{
+    opacity:1;
+    width: 100px;   
+}
+
+/*label > input:checked {
+    cursor: not-allowed;
+}*/
+/*.btns:disabled {
+    pointer-events: none;
+}*/
+
+/*.mb-3 .form-check label img:active {  
+    visibility: hidden;  /* esconde el que clicas, buscar como hacerlo al reves, mientras se muestra al principio, pero solo mientras clicas */
+/*}*/
+
+/* Animation for h3*/
+h3{
+    position: relative;
+    animation-name: animationH3;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes animationH3 {
+    0% {
+        left: 0%; 
+    }
+    25%{
+        left: -17%;
+    }
+    50%{
+        left: 0;
+    }
+    75%{
+        left: 17%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+h3{
+    text-align: center;
+}
+
+.logo:hover{
+    transform: scale(1.5,1.5);
+}
+/* 
+.mostrarData {
+    background-image: url('../img/back/totoro.png');
+    background-size: 150% 100%;
+    background-position-x: center;
+    background-blend-mode:hue;
+    border-radius: 7%;
+    opacity: 0.8;
+}
+
+#users-container {
+    display: none; */
+/* } */
+
+.userType {
+    /* background-color: #DEF2C8; */
+    max-height: 20px;
+   
+} 
+
+.userTYpe {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+     
+
+.form-label, .form-check-label {
+    color: #FFF !important;
+}
+}
+
+.form-check-input {
+    max-width: 15px;
+    max-height: 15px;
+    opacity: 1;
+    box-shadow: 0 0;
+}
+
+.form-check-input:checked {
+    background-color: #4C2E10;
+    border-color: #4C2E10;
+}
+
+.mb-3 small, form small {
+    color: #ff0101;
+    background-color: #DEF2C8;
+    /* position: absolute; */
+    /* bottom: 0;
+    left: 0; */
+    visibility: hidden;
+}
+
+.mb-3.error small{
+    visibility: visible;
+}
